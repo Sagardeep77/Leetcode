@@ -9,7 +9,7 @@ function threeSumClosest(nums: number[], target: number): number {
         return calc;
     }
     
-    const helper = function(curr,i,j):number{
+    const helper = function(curr,i,j):number | undefined{
         if(j-i <= 0) return ;
         let min;
         while(i != j){
